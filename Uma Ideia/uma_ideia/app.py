@@ -23,7 +23,7 @@ def download(filename):
     caminho_upload = os.path.join(UPLOAD_FOLDER, filename)
     caminho_download = os.path.join(DOWNLOAD_FOLDER, filename)
 
-    # Só copia se ainda não existir na pasta downloads
+    
     if not os.path.exists(caminho_download):
         shutil.copy(caminho_upload, caminho_download)
 
